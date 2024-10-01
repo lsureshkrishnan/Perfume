@@ -1,0 +1,72 @@
+/* Main container to wrap the heading and the boxes */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the content horizontally */
+    justify-content: center; /* Center align the content vertically */
+    padding: 20px;
+}
+
+/* Styling for the heading */
+.heading {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* The container for the boxes */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 50px;
+    border: 4px solid rgba(255, 165, 0, 0); /* Fully transparent border */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 
+                inset 0 0 20px rgba(0, 0, 0, 0.5); /* Added inset shadow for inward effect */
+    background-color: rgba(255, 255, 255, 0.2); /* Light background to make the border visible */
+    width: 80%;
+    margin-left: 1.5px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.container:hover {
+    background-color: rgba(255, 165, 0, 0.3); /* Change background color on hover */
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), /* More pronounced inset shadow */
+                0 5px 15px rgba(0, 0, 0, 0.2); /* Keep the outer shadow */
+    transform: scale(1.05); /* Slightly zoom in on hover */
+}
+
+/* Styling for individual boxes */
+.key {
+    width: calc(50% - 10px);
+    color: #000;
+    height: auto;
+    border: 4px solid #ffffff; /* Thicker border */
+    border-radius: 15px; /* Rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Initial subtle shadow */
+}
+
+/* Hover effect for boxes */
+.key:hover {
+    background: linear-gradient(45deg, rgba(255, 111, 97, 0.8), rgba(107, 91, 149, 0.8));
+    color: white;
+    border-color: orange;
+    box-shadow: 0 10px 20px rgba(255, 165, 0, 0.7), 
+                0 0 30px rgba(255, 165, 0, 0.6), 
+                0 0 60px rgba(255, 165, 0, 0.4); /* Glowing shadow effect */
+    transform: translateY(-15px);
+}
+
+/* Full-width box styling */
+.key.full-width {
+    width: 100%;
+}

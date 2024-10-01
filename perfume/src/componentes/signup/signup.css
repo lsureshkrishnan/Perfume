@@ -1,0 +1,94 @@
+/* Modal backdrop to cover the entire screen */
+.modal-backdrop-11 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it's on top of other content */
+  }
+  
+  /* Modal content styling with background image */
+  .modal-content-12 {
+    background: white;
+    border: 2px solid #ccc; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    width: 90%; /* Responsive width */
+    max-width: 500px; /* Max width for larger screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    position: relative; /* For positioning the close button */
+    background-image: url('https://thumbs.dreamstime.com/b/water-drop-splash-freeze-frame-clear-generated-ai-droplets-suspended-air-against-teal-background-300913350.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire content area */
+    background-position: center; /* Center the image */
+  }
+  
+  /* Form group styling */
+  .form-group-14,
+  .form-group-15,
+  .form-group-16 {
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .form-group-14 label,
+  .form-group-15 label,
+  .form-group-16 label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group-14 input,
+  .form-group-15 input,
+  .form-group-16 input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background for input fields */
+  }
+  
+  /* Submit button styling */
+  .submit-btn-17 {
+    background-color: #28a745; /* Green background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submit-btn-17:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  /* Back button styling with border */
+  .back-btn-13 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent; /* Transparent background */
+    color: #333; /* Dark color for the icon */
+    border: 2px solid #333; /* Dark border */
+    border-radius: 4px; /* Rounded corners for the border */
+    padding: 5px 10px; /* Padding inside the button */
+    font-size: 20px; /* Larger font size for the icon */
+    cursor: pointer;
+    transition: color 0.3s ease, border-color 0.3s ease; /* Smooth color and border transition */
+  }
+  
+  .back-btn-13:hover {
+    color: #dc3545; /* Red color on hover */
+    border-color: #dc3545; /* Red border on hover */
+  }
+  
+  .back-btn-13:focus {
+    outline: none; /* Remove the default focus outline */
+  }
+  

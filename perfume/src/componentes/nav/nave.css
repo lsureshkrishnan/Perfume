@@ -1,0 +1,114 @@
+nav {
+    background-color: #333;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* For positioning the shadow */
+    animation: glow-animation 5s infinite; /* Apply animation */
+    border-radius: 5px;
+  }
+  
+  h1 {
+    color: aqua;
+    margin: 0;
+    font-size: 24px;
+    margin-left: 40%;
+    
+  }
+  
+  .nav-buttons {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Space between links */
+    align-items: center; /* Align items vertically in the center */
+  }
+  
+  .nav-buttons li {
+    display: inline-block;
+  }
+  
+  .nav-buttons .button {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-buttons .button:hover {
+    background-color: #45a049; /* Darker green */
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-button {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dropdown-button svg {
+    margin-right: 8px; /* Space between icon and text */
+  }
+  
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid white;
+    height: 2.2cm;
+    width: 3cm;
+    justify-content: center;
+  
+  }
+  
+  .dropdown-item {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    margin-right: 1cm;
+    justify-content: center;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #45a049;
+  }
+  
+  /* Keyframes for the color-changing glow effect */
+  @keyframes glow-animation {
+    0% {
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.7); /* Red */
+    }
+    25% {
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.7); /* Green */
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(0, 0, 255, 0.7); /* Blue */
+    }
+    75% {
+      box-shadow: 0 0 20px rgba(255, 255, 0, 0.7); /* Yellow */
+    }
+    100% {
+      box-shadow: 0 0 20px rgba(255, 0, 255, 0.7); /* Purple */
+    }
+  }
+  

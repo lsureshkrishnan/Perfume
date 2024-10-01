@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  
+  .blog-section {
+    text-align: center;
+  }
+  
+  .section-1 {
+    margin: 50px 0;
+    text-align: center; /* Center the text and content */
+  }
+  
+  .title-2 {
+    font-size: 2.5rem;
+    color: #866444;
+    margin-bottom: 10px;
+    padding: 20px;
+  }
+  
+  .subtitle-3 {
+    font-size: 1.2rem;
+    color: #999;
+    margin-bottom: 30px;
+  }
+  
+  .container-4 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Ensures it wraps on smaller screens */
+  }
+  
+  .card-5 {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    text-align: center;
+    padding: 15px; /* Added padding */
+    transition: transform 0.3s ease;
+  }
+  
+  .card-5:hover {
+    transform: scale(1.05); /* Small hover effect */
+  }
+  
+  .card-5 img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .text-6 {
+    padding-top: 10px;
+    font-size: 1.1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .container-4 {
+      flex-direction: column; /* Stack cards vertically on smaller screens */
+    }
+  
+    .card-5 {
+      margin-bottom: 20px; /* Add space between stacked cards */
+    }
+  }
+  

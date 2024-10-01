@@ -1,0 +1,152 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: black;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header-container.dark {
+    background-color: #333;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+    transition: color 0.3s ease;
+  }
+  
+  .dark h1 {
+    color: #ddd;
+  }
+  
+  .nav-buttons {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .nav-buttons li {
+    display: inline;
+  }
+  
+  .nav-buttons .button {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-buttons .button:hover {
+    background-color: #45a049; /* Darker green */
+  }
+  
+  .nav-buttons .button.dark {
+    background-color: #555;
+    color: #ddd;
+  }
+  
+  .contact {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .contact.dark {
+    background-color: #333;
+    color: #9ef;
+  }
+  
+  .social-media {
+    justify-content: center;
+    display: flex;
+    gap: 15px; /* Space between the icons */
+    padding: 15px; /* Padding around the container */
+  }
+  
+  .social_media_icon {
+    font-size: 2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+  }
+  
+  /* Facebook original color */
+  .facebook-icon {
+    color: #3b5998;
+  }
+  
+  .facebook-icon:hover {
+    transform: scale(1.2); /* Increase size on hover */
+  }
+  
+  /* Twitter original color */
+  .twitter-icon {
+    color: #1da1f2;
+  }
+  
+  .twitter-icon:hover {
+    transform: scale(1.2); /* Increase size on hover */
+  }
+  
+  /* Instagram original gradient color */
+  .instagram-icon-wrapper {
+    display: inline-block;
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:  rgb(239, 102, 187);
+    transition: transform 0.3s ease;
+}
+
+.instagram-icon-wrapper:hover {
+    transform: scale(1.2); /* Increase size on hover */
+}
+
+.instagram-icon {
+    color: pink; /* Ensure the icon itself is transparent */
+}
+
+
+
+  
+  /* LinkedIn original color */
+  .linkedin-icon {
+    color: #0077b5;
+  }
+  
+  .linkedin-icon:hover {
+    transform: scale(1.2); /* Increase size on hover */
+  }
+  
+  /* Telegram original color */
+  .telegram-icon {
+    color: #0088cc;
+  }
+  
+  .telegram-icon:hover {
+    transform: scale(1.2); /* Increase size on hover */
+  }
+  
+  /* WhatsApp original color */
+  .whatsapp-icon {
+    color: #25d366;
+  }
+  
+  .whatsapp-icon:hover {
+    transform: scale(1.2); /* Increase size on hover */
+  }
+  

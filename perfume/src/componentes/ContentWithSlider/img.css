@@ -1,0 +1,170 @@
+/* Ensure body takes full width and height */
+body {
+    margin: 0;
+    padding: 0;
+    
+  }
+  .lsk {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 50px;
+    border: 4px solid rgba(255, 165, 0, 0); /* Fully transparent border */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), 
+                inset 0 0 20px rgba(0, 0, 0, 0.5); /* Added inset shadow for inward effect */
+    background-color: rgba(255, 255, 255, 0.2); /* Light background to make the border visible */
+    height: 20cm;
+    width: 80%;
+    margin-left: 7%;
+    margin-top: 3cm;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.lsk:hover {
+    background-color: rgba(255, 165, 0, 0.3); /* Change background color on hover */
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), /* More pronounced inset shadow */
+                0 5px 15px rgba(0, 0, 0, 0.2); /* Keep the outer shadow */
+    transform: scale(1.05); /* Slightly zoom in on hover */
+}
+.d{
+  color: #242920;
+}
+  
+  .container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* Ensures content fills the full height of the viewport */
+    padding: 0 5%;
+    box-sizing: border-box;
+  }
+  
+  .content-container {
+    width: 50%; /* Adjust width to allow space for the slider */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .content-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .boxes {
+    display: flex;
+    flex-direction: column; /* Stack boxes vertically */
+    gap: 10px; /* Space between the boxes */
+    margin-bottom: 2cm;
+  }
+  
+  .box {
+    padding: 20px;
+    color: #242920;
+    border: 4px solid rgb(186, 186, 186); /* Base border color */
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.6); /* Inner blur effect */
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5); /* Base background color */
+    font-size: 1.2rem; /* Increase font size */
+    font-weight: 600; /* Slightly bold text */
+  }
+  
+  .box:hover {
+    border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1; /* Multicolor border on hover */
+    box-shadow: inset 0 0 10px rgba(255, 165, 0, 0.6), 0 10px 20px rgba(255, 165, 0, 0.4); /* Intensify shadows on hover */
+    transform: translateY(-5px); /* Move the box up slightly */
+    background-color: rgba(255, 165, 0, 0.2); /* Change background color on hover */
+  }
+  
+  .slider-container {
+    width: 40%; /* Adjust width as needed */
+    height: 70%; /* Adjust height as needed */
+    overflow: hidden;
+    border-radius: 10px;
+    border: 5px solid white; /* Increased border size */
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.6); /* Inner blur effect for the slider */
+    margin-bottom: 0.5cm;
+  }
+  
+  .slider-wrapper {
+    display: flex;
+    width: 500%; /* Adjust this based on the number of images */
+    height: 100%;
+    animation: slide 50s infinite linear; /* Adjust duration as needed */
+  }
+  
+  .slider-wrapper img {
+    width: 20%; /* Ensure this matches the slider-wrapper width percentage */
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f8ff;
+    padding: 0 20px;
+  }
+  
+  section.dark {
+    background: #242920;
+  }
+  
+  .icons {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 1000;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icons svg {
+    font-size: 20px;
+    color: #fff;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .icons svg:first-child {
+    margin-left: 0;
+  }
+  
+  .icons:hover {
+    background-color: #555;
+  }
+  
+  section.dark .icons {
+    background-color: #555;
+  }
+  
+  section.dark .icons:hover {
+    background-color: #777;
+  }
+  
+  section.dark .icons svg {
+    color: #ccc;
+  }
+  

@@ -1,0 +1,87 @@
+.new-arrivals {
+    text-align: center;
+    padding: 20px;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Slide up effect */
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out; /* Smooth animation */
+    background-color: white;
+  }
+  .www{
+    color: gray;
+  }
+  
+  .new-arrivals.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .new-arrivals h2 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+  .product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .product {
+    width: 200px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* A default shadow, enhanced in JSX */
+  }
+  
+  .product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .product img:hover {
+    transform: scale(1.1); /* Image scales up on hover */
+  }
+  
+  .discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 0.8rem;
+  }
+  
+  .category {
+    font-size: 1rem;
+    color: #9c805f;
+  }
+  
+  .product-name {
+    font-size: 1rem;
+    color: black;
+    margin: 10px 0;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: grey;
+    font-size: 0.9rem;
+  }
+  
+  .new-price {
+    color: #d4a373;
+    font-size: 1.1rem;
+  }
+  

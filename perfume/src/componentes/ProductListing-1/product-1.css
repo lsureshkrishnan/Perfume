@@ -1,0 +1,89 @@
+.product-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .exclusive-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .exclusive-title span {
+    color: #b59649; /* Golden color for 'Products' */
+  }
+  
+  .products {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 220px;
+    position: relative;
+    padding: 20px;
+  }
+  
+  .discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .discount {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 12px;
+  }
+  
+  .soldout-badge {
+    background-color: #c8a063; /* Golden color */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 12px;
+  }
+  
+  .product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .product-info {
+    text-align: center;
+  }
+  
+  .product-category {
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 5px;
+  }
+  
+  .product-name {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .price-section {
+    margin-top: 10px;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+  }
+  
+  .new-price {
+    color: #b59649; /* Golden color */
+    font-weight: bold;
+  }
+  
+  
